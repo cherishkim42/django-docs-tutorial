@@ -1,4 +1,5 @@
 """mysite URL Configuration
+Like a 'Table of Contents'
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -14,8 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 
 urlpatterns = [
+    path('polls/', include('polls.urls')), #include() allows ref'ing other URLconfs. Makes it easy to plug-and-play URLs. ALWAYS use include() when you include other URL patterns; admin.site.urls is the sole exception to this.
     path('admin/', admin.site.urls),
 ]
