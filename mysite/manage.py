@@ -1,3 +1,6 @@
+#????
+# https://stackoverflow.com/questions/59281990/django-development-server-stops-after-logging-into-admin
+
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
