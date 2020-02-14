@@ -7,7 +7,7 @@ from django.utils import timezone
 # Each model has CLASS VARIABLES, each of which reps a DB FIELD in the model.
 # Each field is repped by an instance of a Field class (ex. CharField for character fields; DateTimeField for datetimes)
 
-#models.Model -- go to models library, use the Model class from there
+#models.Model = go to models library, use the Model class from there
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
